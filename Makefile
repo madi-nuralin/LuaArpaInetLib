@@ -3,15 +3,11 @@
 ###########
 
 CC = gcc
-CFLAGS = -I.
-DEPS = _to.h _atoip.h lua_arpa_inet_lib.h
-OBJ = 
+CFLAGS = -Wall -fpic -shared -o
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
-
-luainet: _to.o _atoip.o lua_arpa_inet_lib.o
-	$(CC) -o luainet.so _to.o _atoip.o lua_arpa_inet_lib.o
+all:
+	$(CC) $(CFLAGS) lib/linetlib.so -I/usr/include/lua5.3  src/linetlib.* src/_to.* src/_atoip.*
 
 clean:
+	rm lib/*.so
 

@@ -85,7 +85,6 @@ inet_ntop4(char *buff, int len, unsigned long ip_addr, unsigned long mask) {
 static __inline__ const char *
 inet_ntop6(char *buff, int len, uint8_t *ip6, unsigned prefixlen) {
 	char lbuf[64];
-	unsigned nprint = 0, ntrim = 0;
 
 	inet_ntop(AF_INET6, ip6, buff, len);
 
