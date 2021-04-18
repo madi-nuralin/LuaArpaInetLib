@@ -1,4 +1,4 @@
-LuaArpaInetLiB
+LuaArpaInetLib
 =======================================
 
 ** LuaArpaInetLib(linetlib.so) is a wrapper library of POSIX's 
@@ -18,7 +18,7 @@ Additional functions:
 ---
 ## Installation 
 ```console
-git clone <REPOSITORY>
+git clone LuaArpaInetLib
 cd LuaArpaInetLib
 make
 ```
