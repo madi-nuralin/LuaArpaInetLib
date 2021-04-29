@@ -1,7 +1,7 @@
-LuaInetLib
+# lua-inet
 =======================================
 
-** LuaInetLib(linetlib.so) is a wrapper library of POSIX's 
+** lua-inet (linetlib.so) is a wrapper library of POSIX's 
 `<netinet/in.h>` and `<arpa/inet.h>` for LUA
 
 Mapped functions:
@@ -19,8 +19,8 @@ Additional functions:
 ---
 ## Installation 
 ```console
-git clone LuaInetLib
-cd LuaInetLib
+git clone https://github.com/madi-nuralin/lua-inet.git
+cd lua-inet
 make
 ```
 + `linetlib.so` is shared library file, generated after compilation,
